@@ -1,0 +1,144 @@
+@font-face {
+    font-family: LeagueSpartan;
+    src: url(/assets/fonts/leagueSpartan/LeagueSpartan-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: LeagueSpartan;
+
+}
+
+section {
+    margin: 15px;
+}
+
+.voltar {
+    background: transparent;
+    rotate: 180deg;
+    border: none;
+    margin: 10px;
+}
+
+.img-voltar {
+    width: 6vh;
+}
+
+.titulo {
+    display: flex;
+    align-items: start;
+    font-weight: 400;
+}
+
+.foto {
+    min-width: 20vh;
+    height: 20vh;
+    border-radius: 50vh;
+}
+
+.container-perfil {
+    display: flex;
+    flex-direction: row;
+}
+
+.box-texto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.container-perfil {
+    padding: 5px;
+}
+
+.meuArquivo {
+    margin-left: 10px;
+    margin-top: 18px;
+    border-radius: 20px;    
+    display: inline-block;
+    padding: 10px 20px;
+    background: #999c9a;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+
+label:hover {
+    background: #99dbff;
+    transition: 0.5s;
+}
+
+#preview img {
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #6c6c6c;
+    object-fit: cover;
+}
+
+.editar {
+    border: none;
+    width: 3vh;
+    background: transparent;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+#visualizacao-dados {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    p {
+        padding: 6px;
+        border-bottom: 3px solid #ccc;
+        display: inline-block;
+        padding-bottom: 2px;
+    }
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 3px solid #686868;
+
+}
+
+footer {
+    position: relative;
+    top: 130px;
+}
+
+.btn-sair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sair {
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+    font-weight: 600;
+}

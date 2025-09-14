@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Empresarial</title>
+    <link rel="icon" href="/assets/img/logo.png">
+    <link rel="stylesheet" href="/css/login_cadastro.css">
+</head>
+<body>
+    
+    <main>
+        <section>
+            <form class="fundo">
+                <img class="patinha" id="p-esquerda-superior" src="/assets/icons/paws.png" alt="">
+                <img class="patinha" id="p-direita-superior" src="/assets/icons/paws.png" alt="">
+
+                <img class="patinha" id="patinha-duplicada-superior-direita" src="/assets/icons/paws.png" alt="">
+                <img class="patinha" id="patinha-duplicada-meio" src="/assets/icons/paws.png" alt="">
+                <div class="title">
+                    <h1>Faça seu <br>Login</h1>
+                    <span>LOGIN EMPRESARIAL</span>
+                </div>
+                
+                <div class="container">
+                    <input type="text" id="cnpj" placeholder="cnpj" maxlength="18">
+                    <input type="email" placeholder="gmail" required>
+                    <input type="password" placeholder="senha" required minlength="5" maxlength="10">
+                    <a href="/html/empresa/cadastroEmpresarial.html">Não tem login? Faça seu cadastro aqui.</a>
+                    <button type="submit">Entrar</button>
+                </div>
+
+                <img class="patinha" id="patinha-duplicada-interior" src="/assets/icons/paws.png" alt="">
+                <img class="patinha" id="p-direita-infeior" src="/assets/icons/paws.png" alt="">
+            </form>
+        </section>
+    </main>
+
+    <script src="/js/validacaoCNPJ.js"></script>
+</body>
+</html>

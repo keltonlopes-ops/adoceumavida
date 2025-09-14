@@ -1,0 +1,339 @@
+@font-face {
+  font-family: LeagueSpartan;
+  src: url(/assets/fonts/leagueSpartan/LeagueSpartan-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Allura;
+  src: url(/assets/fonts/Allura/Allura-Regular.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: LeagueSpartan;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 10vh;
+  background-color: #6BB5ED;
+  color: #FFF;
+
+}
+.icon-logo{
+  width: 8vh;
+}
+.icon-menu{
+  width: 6vh;
+}
+
+.menu{
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 1px;
+  
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+  border-radius:10px 0 10px 90px;
+  z-index: 2;
+  
+}
+.menu.show{
+  display: flex;
+  flex-direction: column;
+  background-color: #4486b8;
+  width: 30vh;
+  height: 50vh;
+  
+  
+  h1{
+    margin-top: 30px;
+  }
+  
+  a{
+    color: #000000;
+    padding: 10px;
+  }
+}
+.menu-btn{
+  border: none;
+  background: transparent;
+}
+
+.titulo{
+  font-size: 2vh;
+}
+
+.links-menu{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 20px;
+}
+
+.bemvindo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: #ffe042d3;
+}
+.texto-bemvindo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.titulo-bv{
+  display: flex;
+  flex-direction: row;
+  color: #6BB5ED;
+}
+.texto-bv{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+.img-cachorro{
+  width: 25vh;
+}
+.paws{
+  width: 5vh;
+  margin-left: 5px;
+  rotate: 340deg;
+}
+
+.animais-adocao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #72c2ff;
+
+  h1{
+    margin-bottom: 20px;
+  }
+}
+
+.container-animais{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.cards-animais{
+  height: 25vh;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  border-radius: 35px;
+  padding: 10px;
+  border: 3px solid #919090;
+  color: #426197;
+}
+.card-foto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.foto{
+  width: 15vh;
+  height: 15vh;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.botao{
+  margin-top: 15px;
+  padding: 15px;
+  font-size: 15px;
+  background-color: #6BB5ED;
+  color: #FFF;
+  border: none;
+  border-radius: 15px;
+  font-weight: 500;
+}
+.container-dicas{
+  background-color: #ffc38749;
+  padding-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo-dicas{
+  margin-left: 30px;
+
+  h1{
+    color: #068df4;
+  }
+  p{
+    font-size: 17px;
+    color: #9ca105;
+    font-family: Allura;
+  }
+}
+
+.container-dicas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-dicas{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;  
+}
+
+#azul{
+  background-color: #6BB5ED;
+  color: #FFF;
+}
+
+#transparent{
+  background-color: transparent;
+}
+.img-dicas{
+  width: 15vh;
+  border: 2px solid #6d6d6d;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #FFF;
+}
+
+.texto-dicas{
+  padding: 5px;
+  width: 90%;
+  h1{
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5px;
+  }
+  p{
+    font-weight: 400;
+    font-size: 15px;
+  }
+}
+.mapa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-mapa{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #5d7180;
+  width: 70%;
+  height: 60vh;
+}
+.texto-mapa{
+  color: #fff;
+
+}
+.white{
+  margin: 20px;
+  background-color: #FFF;
+  width: 85%;
+  height: 80%;
+}
+
+.rodape{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #72c2ff;
+  color: #FFF;
+  margin-top: 40px;
+
+  h1{
+    font-size: 20px;
+  }
+}
+.titulo-rodape{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+span{
+  color: rgb(241, 29, 29);
+}
+.logo-rodape{
+  width: 10vh;
+}
+
+.lista{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.preto{
+  color: #000;
+}
+.branco{
+  color: #fff;
+}
+li{
+  padding: 7px;
+  list-style: none;
+  
+}
+a{
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.redes-sociais{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.img-redes{
+  padding: 10px;
+  width: 6vh;
+}
+
+@media screen and (max-width: 500px){
+  #foto3, #foto4{
+    display: none;
+  }
+  .card-dicas{
+    width: 95%;
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 750px) {
+  .bemvindo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .texto-bv{
+    font-size: 18px;
+  }
+    #foto3{
+    display: none;
+  }
+  .card-dicas{
+    width: 80vh;
+    margin-top: 10;
+    padding: 20px;
+  }
+}

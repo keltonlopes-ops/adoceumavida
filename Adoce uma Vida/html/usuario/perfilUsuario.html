@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu perfil</title>
+    <link rel="stylesheet" href="/css/perfilUsuario.css">
+    <link rel="icon" href="/assets/img/logo.png">
+</head>
+
+<body>
+    <header>
+        <button onclick="window.history.back()" class="voltar">
+            <img class="img-voltar" src="/assets/icons/next.png" alt="">
+        </button>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="titulo">Meu perfil</h1>
+
+            <div class="perfil">
+                <div class="container-perfil">
+                    <div id="preview" class="foto"></div>
+                    <div class="box-texto">
+                        <div class="texto">
+                            <h1>Seja bem-vindo, <span id="nomeTexto">Nome</span>!</h1>
+                        </div>
+                        <button id="btnEditar" class="editar">
+                            <img class="editar" src="/assets/icons/edit.png" alt="Editar">
+                        </button>
+                    </div>
+                </div>
+
+                <label class="meuArquivo" for="meuArquivo">Alterar foto</label>
+                <input type="file" id="meuArquivo">
+
+                <div class="dados">
+                    <!-- VISUALIZAÇÃO -->
+                    <div id="visualizacao-dados">
+                        <p><strong>Email:</strong> <span id="emailTexto">naecia@gmail.com</span></p>
+                        <p><strong>Telefone:</strong> <span id="telefoneTexto">(61) 99999-9999</span></p>
+                    </div>
+
+                    <!-- EDIÇÃO -->
+                    <div id="edicao-dados" style="display: none;">
+                        <div class="campo">
+                            <input type="text" id="nomeInput" placeholder="nome">
+                        </div>
+                        <div class="campo">
+                            <input type="email" id="emailInput" placeholder="e-mail">
+                        </div>
+                        <div class="campo">
+                            <input type="tel" id="telefoneInput" placeholder="telefone">
+                        </div>
+                        <button id="btnSalvar" class="salvar">Salvar</button>
+                        <button id="btnCancelar" class="cancelar">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+          
+        </section>
+    </main>
+
+    <footer>
+          <hr>
+            <div class="btn-sair">
+                <button class="sair">Sair</button>
+            </div>
+    </footer>
+    <script src="/js/perfilUsuario.js"></script>
+</body>
+
+</html>
